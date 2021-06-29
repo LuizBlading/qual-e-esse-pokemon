@@ -1,0 +1,66 @@
+:root{
+    --color-first: #785EDD; /* Criando variaveis no CSS*/
+    --color-second: #453E4A;
+    --color-third: #9E58DC;
+    --color-fourth: #ffffff;
+    --color-fifth: #f1c40f;
+    --color-black-first: #000000;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinhamento horizontal */
+    font-family: 'Press Start 2P', cursive;
+    background: var(--color-second);
+    color: var(--color-fourth);
+}
+
+h1{
+    /* font-family: "Pocket Monk";
+    font-size: 52px;
+    color:yellow;
+    text-shadow: 5px 5px #002088; */
+    text-shadow: 5px 5px var(--color-black-first);
+}
+
+input{
+    box-sizing: border-box;
+    border-radius: 0px;
+    border: 2px solid var(--color-black-first);
+    height: 40px;
+    width: 300px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 15px;
+}
+
+button{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 18px;
+    box-sizing: border-box;
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: var(--color-first);
+    color: var(--color-fourth);
+    cursor: pointer;
+    transition: transform 100ms ease-in-out;
+    box-shadow: 4px 4px 0 var(--color-black-first);
+    margin-bottom: 40px;
+}
+
+button:hover{
+    transform: scale(1.05);
+    
+}
+
+img{
+    width: 25%;
+    opacity: 100%;
+    /* filter: blur(6px) sepia(50%) grayscale(100%) drop-shadow(30px -20px 30px #000); */
+    filter: sepia(50%) brightness(0%) contrast(200%) grayscale(100%) drop-shadow(0px 0px 15px #000);
+}
